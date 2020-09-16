@@ -23,13 +23,6 @@
                 <p>Created by <a href="/" target="_blank" aria-label="View Jamel Hammoud's portfolio website">Jamel Hammoud</a>. See source on <a href="https://github.com/JamelHammoud/hextime" aria-label="View on Github" rel="noreferrer">GitHub</a>.</p>
             </footer>
         </main>
-        <script>
-            setInterval(function() {
-                today = new Date();
-                hex = "#" + (today.getHours() < 10 ? '0' : '') + today.getHours() + "" + (today.getMinutes() < 10 ? '0' : '') + today.getMinutes() + "" + (today.getSeconds() < 10 ? '0' : '') + today.getSeconds();
-                document.querySelector("#clock").innerHTML = hex;
-                document.body.style.backgroundColor = hex;
-            }, 1)
-        </script>
+        <script src="index.js" type="text/javascript"></script>
     </body>
 </html>
