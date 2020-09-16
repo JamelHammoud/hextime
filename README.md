@@ -16,4 +16,4 @@ This small codeblock gets the current time, formats it (placing a zero before th
 
 Feel free to play around with the code!
 
-See it live at <a href="https://jamelhammoud.com/projects/hextime/">Here</a>.
+See it live <a href="https://jamelhammoud.com/projects/hextime/">Here</a>.
