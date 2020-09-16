@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HexTime</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Jamel Hammoud"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta property="og:image" content="https://jamelhammoud.com/img/splash.png" />
+        <meta property="og:title" content="HexTime">
+        <meta name="description" content="A clock that represents the time as hex color values">
+        <meta property="og:type" content="website" />
+
+        <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <section>
+                <h1 id="clock"></h1>
+            </section>
+            <footer>
+                <p>Created by <a href="/" target="_blank" aria-label="View Jamel Hammoud's portfolio website">Jamel Hammoud</a>. See source on <a href="https://github.com/JamelHammoud/hextime" aria-label="View on Github" rel="noreferrer">GitHub</a>.</p>
+            </footer>
+        </main>
+        <script>
+            setInterval(function() {
+                today = new Date();
+                hex = "#" + (today.getHours() < 10 ? '0' : '') + today.getHours() + "" + (today.getMinutes() < 10 ? '0' : '') + today.getMinutes() + "" + (today.getSeconds() < 10 ? '0' : '') + today.getSeconds();
+                document.querySelector("#clock").innerHTML = hex;
+                document.body.style.backgroundColor = hex;
+            }, 1)
+        </script>
+    </body>
+</html>
