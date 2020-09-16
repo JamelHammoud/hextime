@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+h1, p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 13vw;
+    font-weight: 300;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 2rem;
+    font-size: 14px;
+    margin: 0 auto;
+    width: fit-content;
+    background: #ffffff17;
+    padding: 6px 13px;
+    border-radius: 50rem;
+    color: #ffffffba;
+    font-weight: 700;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
